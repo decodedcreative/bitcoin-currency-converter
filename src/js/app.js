@@ -19,7 +19,10 @@ document.querySelectorAll("[data-currency-conversion]").forEach(function(form){
 			initialCurrencyType: initialCurrencyType,
 			convertedCurrencyAmount: convertedCurrencyAmount,
 			convertedCurrencyType: convertedCurrencyType
+		}).then(function(data){
+			console.log(data);
 		});
+
 
 		e.preventDefault();
 	});
